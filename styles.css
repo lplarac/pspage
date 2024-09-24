@@ -1,11 +1,38 @@
-/* General Styles */
+/* General Page Styling */
 body {
+    background-color: #4f4f4f; /* Metallic medium-dark gray background */
+    color: #dcdcdc; /* Very light gray font color */
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fff;
-    color: #333;
 }
+
+/* Ensure all text across the page uses the light gray font color */
+h1, h2, h3, h4, h5, h6, p, a, li, span, div {
+    color: inherit; /* Inherit the very light gray color from the body */
+}
+
+/* Optional: Change link colors */
+a {
+    color: #f0f0f0; /* Light gray for links */
+}
+
+a:hover {
+    color: #ffffff; /* White for links when hovered */
+}
+
+/* Add shadow to give a metallic feel */
+.section-title, .description-section, .content-section {
+    background-color: #4f4f4f;
+    color: #dcdcdc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Slight shadow for metallic effect */
+}
+
+/* If you want a metallic gradient background */
+body {
+    background: linear-gradient(145deg, #434343, #595959); /* Metallic effect with two similar gray shades */
+}
+
 
 /* Top Section Styles */
 .top-section {
