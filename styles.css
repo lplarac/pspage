@@ -1,6 +1,7 @@
 /* General Page Styling */
 body {
     background-color: #4f4f4f; /* Metallic medium-dark gray background */
+    background: linear-gradient(180deg, #4f4f4f, #595959); /* Subtle vertical metallic gradient */
     color: #dcdcdc; /* Very light gray font color */
     font-family: Arial, sans-serif;
     margin: 0;
@@ -12,27 +13,23 @@ h1, h2, h3, h4, h5, h6, p, a, li, span, div {
     color: inherit; /* Inherit the very light gray color from the body */
 }
 
-/* Optional: Change link colors */
+/* Updated Link Colors to Match the Gray Theme */
 a {
-    color: #f0f0f0; /* Light gray for links */
+    color: #c0c0c0; /* Lighter gray for links */
+    text-decoration: none; /* Remove underline by default */
 }
 
 a:hover {
     color: #ffffff; /* White for links when hovered */
+    text-decoration: underline; /* Add underline on hover */
 }
 
 /* Add shadow to give a metallic feel */
 .section-title, .description-section, .content-section {
-    background-color: #4f4f4f;
+    background-color: #3e3e3e; /* Darker gray for section backgrounds */
     color: #dcdcdc;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Slight shadow for metallic effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Slight shadow for metallic effect */
 }
-
-/* If you want a metallic gradient background */
-body {
-    background: linear-gradient(145deg, #434343, #595959); /* Metallic effect with two similar gray shades */
-}
-
 
 /* Top Section Styles */
 .top-section {
@@ -65,7 +62,6 @@ body {
     display: block; /* Ensure the image behaves as a block-level element */
 }
 
-
 .contact-info h1 {
     margin-top: 0;
 }
@@ -76,11 +72,11 @@ body {
 
 /* Description Section Styles */
 .description-section {
-    background-color: #fff;
+    background-color: #3e3e3e; /* Darker gray background */
     padding: 15px;
     margin: 20px auto;
     max-width: 800px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Metallic shadow effect */
 }
 
 .description-section p {
@@ -96,16 +92,17 @@ body {
 
 /* Section Title Styles */
 .section-title {
-    background-color: #fff;
+    background-color: #3e3e3e; /* Darker gray background */
     padding: 15px;
     cursor: pointer;
     margin: 0;
     font-size: 1.2em;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #dcdcdc; /* Very light gray text */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Slight shadow for metallic effect */
 }
 
 .section-title:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Deeper shadow on hover */
 }
 
 /* Section Content Styles */
@@ -121,6 +118,7 @@ body {
     margin: 0;
 }
 
+/* Paper Entry Styles */
 .paper-entry {
     margin-bottom: 20px;
 }
@@ -129,12 +127,13 @@ body {
     margin: 5px 0;
 }
 
+/* Updated Paper Entry Link Colors */
 .paper-entry a {
-    color: #007BFF;
+    color: #b0b0b0; /* Light gray for links in paper entries */
     text-decoration: none;
 }
 
 .paper-entry a:hover {
+    color: #ffffff; /* White on hover */
     text-decoration: underline;
 }
-
