@@ -11,21 +11,33 @@ body {
 .top-section {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; /* Center the content horizontally */
     padding: 40px;
 }
 
-.photo img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
+.description-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+    padding: 40px;
 }
 
-.contact-info {
-    margin-top: 20px;
-    text-align: center;
+/* Adjusting the photo container */
+.photo {
+    width: 100%; /* Adjust the width based on container or screen size */
+    max-width: 300px; /* Max width of the image */
+    margin: 0 auto; /* Center the image horizontally */
 }
+
+/* Making the image larger and rectangular */
+.photo img {
+    width: 100%; /* Make the image responsive to the container */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 0; /* Remove the circular effect */
+    object-fit: cover; /* Ensure the image fills the container */
+    display: block; /* Ensure the image behaves as a block-level element */
+}
+
 
 .contact-info h1 {
     margin-top: 0;
@@ -35,6 +47,19 @@ body {
     margin: 5px 0;
 }
 
+/* Description Section Styles */
+.description-section {
+    background-color: #fff;
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.description-section p {
+    margin: 0;
+}
+
 /* Content Section Styles */
 .content-section {
     padding: 20px;
@@ -42,10 +67,7 @@ body {
     margin: 0 auto;
 }
 
-.section {
-    margin-bottom: 20px;
-}
-
+/* Section Title Styles */
 .section-title {
     background-color: #fff;
     padding: 15px;
@@ -59,10 +81,11 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Section Content Styles */
 .section-content {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.5s ease;
+    transition: max-height 0.5s ease-out;
 }
 
 .section-content p,
@@ -71,6 +94,20 @@ body {
     margin: 0;
 }
 
-.section-content.show {
-    max-height: 1000px; /* Adjust this value as needed */
+.paper-entry {
+    margin-bottom: 20px;
 }
+
+.paper-entry p {
+    margin: 5px 0;
+}
+
+.paper-entry a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.paper-entry a:hover {
+    text-decoration: underline;
+}
+
